@@ -47,11 +47,16 @@ router.put('/:id', (req, res, next) => {
     console.log(req.body);
 
     CustomerDetail.findByIdAndUpdate(req.params.id, req.body, (error, data) => {
-        if(error){ 
+        if(!data){
+          res.status(400).send("Customer not found")
+        } else {
+          if(error){ 
             return next(err);
         }
         res.json(data);
-    });
+        }
+      }
+    );
 });
 
 

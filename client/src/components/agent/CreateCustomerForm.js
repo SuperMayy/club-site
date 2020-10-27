@@ -1,5 +1,7 @@
 import React from 'react';
 import axios from 'axios';
+import Nav from './Nav';
+import "../../App.css"
 
 class CreateCustomerForm extends React.Component {
 
@@ -41,6 +43,8 @@ class CreateCustomerForm extends React.Component {
         })
          .then(() => {
              console.log('Data has been sent to the server!');
+            //  Redirect to a diffrent page
+             this.props.history.push("/agent/read");
          })
          .catch(() => {
             console.log('Internal server error');
@@ -54,11 +58,17 @@ class CreateCustomerForm extends React.Component {
         console.log('State: ', this.state);
         //JSX
         return(
-            <div>
-             <h2>Create Customer</h2>
+            <>
+            <Nav />
+            <div className="jumbotron jumbotron-fluid">
+            <div className="container">
+            <div className="card">
+             <h2 className="card-header">Create Customer</h2>
+             <div className="card-body">
              <form onSubmit={this.submit}>
-             <div className="form-input">
+             <div className="input-group">
                <input 
+               className="form-control"
                type="text"
                name="name"
                placeholder="Enter Name"
@@ -66,8 +76,9 @@ class CreateCustomerForm extends React.Component {
                onChange={this.handleChange}
                />
              </div>
-             <div className="form-input">
+             <div className="input-group">
                <input 
+               className="form-control"
                type="text"
                name="companyName"
                placeholder="Enter Company Name"
@@ -75,8 +86,9 @@ class CreateCustomerForm extends React.Component {
                onChange={this.handleChange}
                />
              </div>
-             <div className="form-input">
+             <div className="input-group">
                <input 
+               className="form-control"
                type="text"
                name="email"
                placeholder="Enter Email"
@@ -84,8 +96,9 @@ class CreateCustomerForm extends React.Component {
                onChange={this.handleChange}
                />
              </div>
-             <div className="form-input">
+             <div className="input-group">
                <input 
+               className="form-control"
                type="text"
                name="number"
                placeholder="Enter Number"
@@ -93,8 +106,9 @@ class CreateCustomerForm extends React.Component {
                onChange={this.handleChange}
                />
              </div>
-             <div className="form-input">
+             <div className="input-group">
                <input 
+               className="form-control"
                type="text"
                name="website"
                placeholder="Enter Website"
@@ -102,8 +116,9 @@ class CreateCustomerForm extends React.Component {
                onChange={this.handleChange}
                />
              </div>
-             <div className="form-input">
+             <div className="input-group">
                <textarea 
+               className="form-control"
                name="companyAddress"
                cols="30"
                row="10"
@@ -112,9 +127,13 @@ class CreateCustomerForm extends React.Component {
                onChange={this.handleChange}
                />
              </div>
-             <button>submit</button>
+             <button className="btn btn-primary">submit</button>
              </form>
+             </div>
             </div>
+            </div>
+            </div>
+            </>
         );
     }
 }
