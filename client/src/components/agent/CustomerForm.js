@@ -38,8 +38,6 @@ export const CustomerFrom = ({ customer, match, onSubmit }) => {
                name="name"
                placeholder="Enter Name"
                ref={register}
-              //  value={this.state.name}
-              //  onChange={this.handleChange}
                />
              </div>
              <div className="input-group">
@@ -49,8 +47,6 @@ export const CustomerFrom = ({ customer, match, onSubmit }) => {
                name="companyName"
                placeholder="Enter Company Name"
                ref={register}
-              //  value={this.state.companyName}
-              //  onChange={this.handleChange}
                />
              </div>
              <div className="input-group">
@@ -60,8 +56,6 @@ export const CustomerFrom = ({ customer, match, onSubmit }) => {
                name="email"
                placeholder="Enter Email"
                ref={register}
-              //  value={this.state.email}
-              //  onChange={this.handleChange}
                />
              </div>
              <div className="input-group">
@@ -71,8 +65,6 @@ export const CustomerFrom = ({ customer, match, onSubmit }) => {
                name="number"
                placeholder="Enter Number"
                ref={register}
-              //  value={this.state.number}
-              //  onChange={this.handleChange}
                />
              </div>
              <div className="input-group">
@@ -82,8 +74,6 @@ export const CustomerFrom = ({ customer, match, onSubmit }) => {
                name="website"
                placeholder="Enter Website"
                ref={register}
-              //  value={this.state.website}
-              //  onChange={this.handleChange}
                />
              </div>
              <div className="input-group">
@@ -94,8 +84,6 @@ export const CustomerFrom = ({ customer, match, onSubmit }) => {
                row="10"
                placeholder="Enter Company Address"
                ref={register}
-              //  value={this.state.companyAddress}
-              //  onChange={this.handleChange}
                />
              </div>
              <button type="submit" className="btn btn-primary">submit</button>

@@ -22,14 +22,14 @@ function Nav() {
             Create Customers
           </li>
           </Link>
-          <Link className="nav-link" to="/agent">
+          <a className="nav-link" target="_blank" href="https://dashboard.stripe.com/test/dashboard">
           <li className="nav-item">
             Stripe Account
           </li>
-          </Link>
+          </a>
           <Link className="nav-link" to="/agent">
           <li className="nav-item">
-            Useful Links
+            Main Site
           </li>
           </Link>
         </ul>

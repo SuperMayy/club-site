@@ -1,8 +1,12 @@
 .input-group{
     margin-bottom: 15px;
 }
-.AgentSite{
-    background: #808080;
+/* fix toggler styling issue in Navbar */
+
+.navbar-toggler:focus {
+    outline: none
 }
 
-
+.navbar-toggler {
+    border: none;
+}
