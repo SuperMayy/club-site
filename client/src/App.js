@@ -9,6 +9,7 @@ import MoreDetail from './components/agent/MoreDetail';
 import DeleteCustomer from './components/agent/DeleteCustomer';
 import Home from './components/customer/Home';
 import FormSent from './components/customer/FormSent';
+import PaymentPage from './components/stripe/PaymentPage';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/agent/delete/:id" component={DeleteCustomer}/>
         <Route path="/" exact component={Home}/>
         <Route path="/formsent" exact component={FormSent}/>
+        <Route path="/payment" exact component={PaymentPage}/>
       </Switch> 
     </div>
     </Router>
