@@ -1,0 +1,16 @@
+a {
+    color: white;
+}
+
+a:hover {
+    color: #7952b3;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #7952b3;
+}
+
+.btn:active{
+    background-color: #7952b3;
+}

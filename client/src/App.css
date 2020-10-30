@@ -1,7 +1,7 @@
 .input-group{
     margin-bottom: 15px;
 }
-/* fix toggler styling issue in Navbar */
+/* fix toggler styling issue in Agent Navbar */
 
 .navbar-toggler:focus {
     outline: none
@@ -10,3 +10,30 @@
 .navbar-toggler {
     border: none;
 }
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.header-region{
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 10px;
+    margin-top: 60px;
+}
+
+.clickable-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+/* .card1{
+
+} */

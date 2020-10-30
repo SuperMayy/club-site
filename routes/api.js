@@ -6,6 +6,8 @@ const bodyParser = require('body-parser');
 
 const CustomerDetail = require('../models/customerDetail');
 
+const nodemailer = require('nodemailer');
+
 const stripe = require('stripe')('sk_test_51HNmqhBRlnUVKZqLSsRkEsUxGrvTZLYaBo7UlCXXesqFzvmDhXFtNp3zo0tN9e1O6pJSaJzfhZgRPOslhNOAre5K00mRvuOwx0');
 
 //Creat POST Request
@@ -87,42 +89,39 @@ router.delete("/:id", (req, res, next) => {
 
 
 
-//Sending Email Route
-router.post('/sent', (req,res) => {
-    //send email here
-  console.log(req.body);
+//Send Route for Contact Form
+router.post('/sent', (req, res) => {
+  //send email here
+  console.log('Body: ', JSON.stringify(req.body));
   const output = `
-    <p>Record of message from www.clubbookingsite.com</p>
-    <h3>Message Details</h3>
+    <p>Record of message sent at Club Site</p>
+    <h3>Booking Details</h3>
     <ul>
-      <li>Name: ${req.body.name}</li>
-      <li>Company: ${req.body.company}</li>
+      <li>Name: ${req.body.fullname}</li>
       <li>Email: ${req.body.email}</li>
-      <li>Phone: ${req.body.phone}</li>
-      <li>Reason: ${req.body.reason}</li>
     </ul>
     <h3>Additional Message</h3>
-    <p>${req.body.details}</p>
+    <p>${req.body.emailBody}</p>
   `;
 
   //Node mailer code
   let transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
+    host: 'smtp-mail.outlook.com',
     port: 587,
-    secure: false,
+    secureConnection: false, // TLS requires secureConnection to be false
     auth: {
-        user: 'club.booking.site@gmail.com', // like : abc@gmail.com
-        pass: 'MayowaS1'           // like : pass@123
+        user: 'testerformreciver9920@outlook.com', // like : abc@gmail.com
+        pass: 'Thisisapassword9920'           // like : pass@123
     },
     tls: {
-        rejectUnauthorized: false
+      ciphers:'SSLv3'
     }
     });
     
     let mailOptions = {
-      from: '"Website Message" <club.booking.site@gmail.com>', // sender address
-      to: `club.booking.site@gmail.com, ${req.body.email}`, // list of receivers
-      subject: "Website Contact Form Message", // Subject line
+      from: '"Club Site Message" <testerformreciver9920@outlook.com>', // sender address
+      to: `testerformreciver9920@outlook.com`, // list of receivers
+      subject: "Club Site Website Contact Form Message", // Subject line
       text: "Hello world?", // plain text body
       html: output, // html body
     };
@@ -130,12 +129,11 @@ router.post('/sent', (req,res) => {
     transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
          return console.log(error);
+      } else {
+        console.log('success');
+        res.render('contact', {mg:'Message has been sent'});
       }
-    console.log('success');
-    res.json({
-        msg: 'Message Recived!!!'
     }); 
-    });    
 });
 
 //Stripe Subscription payment

@@ -7,6 +7,8 @@ import EditCustomerData from './components/agent/EditCustomerData';
 import AgentHome from './components/agent/AgentHome';
 import MoreDetail from './components/agent/MoreDetail';
 import DeleteCustomer from './components/agent/DeleteCustomer';
+import Home from './components/customer/Home';
+import FormSent from './components/customer/FormSent';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
         <Route path="/agent" exact component={AgentHome}/>
         <Route path="/agent/read/:id" component={MoreDetail}/>
         <Route path="/agent/delete/:id" component={DeleteCustomer}/>
+        <Route path="/" exact component={Home}/>
+        <Route path="/formsent" exact component={FormSent}/>
       </Switch> 
     </div>
     </Router>
