@@ -11,7 +11,7 @@ const Footer = () => {
                 <div className="contact">Cookies</div>
                 <div className="sign">Contact</div>
             </div>
-            <div className="parent2">@2020 Name of Company</div>
+            <div className="parent2">&copy;{new Date().getFullYear()} Name of Company</div>
             {/* <div className="parent3">Company Registration Informations</div> */}
         </div>
     );
