@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const path = require('path');
-//const stripe = require('stripe')('sk_test_51HNmqhBRlnUVKZqLSsRkEsUxGrvTZLYaBo7UlCXXesqFzvmDhXFtNp3zo0tN9e1O6pJSaJzfhZgRPOslhNOAre5K00mRvuOwx0');
+const stripe = require('stripe')('sk_test_51HNmqhBRlnUVKZqLSsRkEsUxGrvTZLYaBo7UlCXXesqFzvmDhXFtNp3zo0tN9e1O6pJSaJzfhZgRPOslhNOAre5K00mRvuOwx0');
 
 
 const app = express();
