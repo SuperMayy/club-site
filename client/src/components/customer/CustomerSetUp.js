@@ -61,10 +61,10 @@ class CustomerSetUp extends React.Component {
         return(
             <>
             <Header />
-            <div className="jumbotron jumbotron-fluid">
+            <div className="jumbotron jumbotron-fluid" style={{background: "white"}}>
             <div className="container">
             <div className="card">
-             <h2 className="card-header">SetUp Your Details</h2>
+             <h2 className="card-header" style={{background: "#7952b3"}}>Enter Your Details</h2>
              <div className="card-body">
              <form onSubmit={this.submit}>
              <div className="input-group">
@@ -128,7 +128,7 @@ class CustomerSetUp extends React.Component {
                onChange={this.handleChange}
                />
              </div>
-             <button className="btn btn-primary">submit</button>
+             <button className="btn btn-primary" style={{background: "black", border: "none"}}>submit</button>
              </form>
              </div>
             </div>
