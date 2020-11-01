@@ -13,8 +13,8 @@ const Header = () => {
                 <div className="child2">
                     <ul>
                         <li>Case Study</li>
-                        <li>About</li>
-                        <a href="#contact">
+                        <Link to="/about"><li>About</li></Link>
+                        <a href="/#contact">
                             <li>Contact</li>
                         </a>
                     </ul>
