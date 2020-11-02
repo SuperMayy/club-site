@@ -52,7 +52,7 @@ const About = () => {
               <div class="col-sm-4"></div>
               <div class="col-sm-4">
                 <div class="card text-center">
-                <div class="card-heading">
+                <div class="card-heading"><br/><br/>
                   <h1>Basic</h1>
                 </div>
                 <div class="card-body">

@@ -44,7 +44,7 @@ class Contact extends React.Component {
 
     if (window.confirm('Your message was sent.')) 
             {
-                window.location.href='/formsent'
+                window.location.href='/'
             };
       console.log('Data has been sent to the server!');
 

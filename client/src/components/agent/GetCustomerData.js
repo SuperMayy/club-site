@@ -43,9 +43,9 @@ const GetCustomerData = () => {
                             {customer.email}
                         </td>
                         <td>
-                            <Link to={`/agent/read/${customer._id}`}>More </Link>
-                            <Link to={`/agent/update/${customer._id}`}>Edit </Link>
-                            <Link to={`/agent/delete/${customer._id}`}>Delete</Link>
+                            <Link style={{color: "black"}} to={`/agent/read/${customer._id}`}>More </Link>
+                            <Link style={{color: "black"}} to={`/agent/update/${customer._id}`}>Edit </Link>
+                            <Link style={{color: "black"}} to={`/agent/delete/${customer._id}`}>Delete</Link>
                         </td>
                       </tr>
                   ))

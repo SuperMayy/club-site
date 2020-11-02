@@ -19,7 +19,7 @@ const Header = () => {
                         </a>
                     </ul>
                 </div>
-                <Link to="/payment" style={{background: "grey", padding: "8px", borderRadius: "15px"}}>
+                <Link to="/payment" style={{background: "#343a40", padding: "8px", borderRadius: "15px"}}>
                 <div className="child3">Sign Up</div>
                 </Link>
             </div>
