@@ -100,4 +100,10 @@ video {
     width: 80%; */
     font-size: 1rem;
   }
+  .child2 {
+    font-size: 0.6rem;
+}
+.class3{
+font-size: 0.5rem
+}
 }
