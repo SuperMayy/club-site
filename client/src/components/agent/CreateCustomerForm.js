@@ -60,10 +60,10 @@ class CreateCustomerForm extends React.Component {
         return(
             <>
             <Nav />
-            <div className="jumbotron jumbotron-fluid">
+            <div className="jumbotron jumbotron-fluid" style={{background: "white"}}>
             <div className="container">
             <div className="card">
-             <h2 className="card-header agent-header">Create Customer</h2>
+             <h2 className="card-header agent-header" style={{background: "#7952b3"}}>Create Customer</h2>
              <div className="card-body">
              <form onSubmit={this.submit}>
              <div className="input-group">

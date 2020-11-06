@@ -10,7 +10,7 @@ const Home = () => {
         <div className="">
             <Header />
             <div>
-              <video controls>
+              <video controls autoPlay>
                 <source src={video1} type="video/mp4"/>
               </video>
             </div>
@@ -20,10 +20,12 @@ const Home = () => {
             </div>
             <hr />
             {/* Card Info Region */}
-            <div className="clickable-card">
+            <div className="column">
+            <div className="row">
                 <Card />
                 <Card />
                 <Card />
+                </div>
             </div>
             <br/>
             <div className="header-region">

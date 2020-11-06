@@ -5,14 +5,14 @@ function AgentHome() {
   return (
     <div className="AgentSite">
       <Nav />
-      <div className="jumbotron jumbotron-fluid">
+      <div className="jumbotron jumbotron-fluid" style={{background: "white"}}>
         <div className="container">
           <h1 className="display-4">Welcome</h1>
           <p className="lead">Below are useful links and tutorials.</p>
         </div>
         <div className="container">
-          <div className="card">
-            <div className="card-body">
+          <div className="card" style={{border: "none"}}>
+            <div className="card-body" style={{background: "white"}}>
             <div id="accordion">
               {/* First Accordion */}
               <div className="card">
