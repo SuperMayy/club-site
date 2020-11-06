@@ -37,3 +37,67 @@ video {
 /* .card1{
 
 } */
+
+.btn{
+    color: black;
+    text-decoration: none;
+}
+
+.btn:active {
+    background-color: #7952b3;
+    text-decoration: none;
+    color: black;
+}
+
+.btn:hover {
+    background-color: #7952b3;
+    text-decoration: none;
+    color: black;
+}
+
+.bg-light {
+    background-color: #7952b3!important;
+}
+
+.agent-header{
+    text-align: center;
+    padding: 50px;
+}
+
+.getlinks {
+    color: #7952b3!important;
+    /* margin-left: 10px;
+    border: 1px solid black;
+    padding: 4px 5px 5px 5px;
+    border-radius: 10px;
+    background: black;
+    margin-top: 10px; */
+}
+
+.getlinks:hover{
+    color: #43305e!important;
+    /* color: #ad9ec4!important;
+    background-color: #888888;
+    border: 1px solid #888888; */
+}
+/* 
+.table td, .table th {
+    padding: 1.5rem;
+} */
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    background: #7952b3!important;
+    border:#7952b3!important;
+}
+
+@media only screen and (max-width: 910px) {
+  table {
+    /* display: block;
+    align-items: center;
+	height: 100%;
+	overflow-x: scroll;
+    width: 80%; */
+    font-size: 1rem;
+  }
+}

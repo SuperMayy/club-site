@@ -63,7 +63,7 @@ class CreateCustomerForm extends React.Component {
             <div className="jumbotron jumbotron-fluid">
             <div className="container">
             <div className="card">
-             <h2 className="card-header">Create Customer</h2>
+             <h2 className="card-header agent-header">Create Customer</h2>
              <div className="card-body">
              <form onSubmit={this.submit}>
              <div className="input-group">

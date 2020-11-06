@@ -28,7 +28,7 @@ export const CustomerFrom = ({ customer, match, onSubmit }) => {
       <div className="jumbotron jumbotron-fluid">
       <div className="container">
       <div className="card">
-      <h3 className="card-header">Edit Customer Data</h3>
+      <h3 className="card-header agent-header">Edit Customer Data</h3>
       <div className="card-body">
       <form onSubmit={submitHandler}> 
       <div className="input-group">

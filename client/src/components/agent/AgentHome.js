@@ -18,7 +18,7 @@ function AgentHome() {
               <div className="card">
                 <div className="card-header" id="headingOne">
                   <h5 className="mb-0">
-                  <button className="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <button className="btn btn-link" style={{fontStyle: "none"}}data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                   How to start
                   </button>
                   </h5>
@@ -28,7 +28,7 @@ function AgentHome() {
                   <div className="card-body">
                     This tutorial goes through how to create, read, update and delete user data.<br/><br/>
                     <div className="embed-responsive embed-responsive-16by9">
-                      <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowFullScreen></iframe>
+                      <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/8tPnX7OPo0Q" allowFullScreen></iframe>
                     </div>
                   </div>
                   </div>

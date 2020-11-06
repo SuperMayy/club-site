@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import '../../styles/components/footer.css'
 
 const Footer = () => {
@@ -12,6 +13,7 @@ const Footer = () => {
                 <a href="/#contact"><div className="sign">Contact</div></a>
             </div>
             <div className="parent2">&copy;{new Date().getFullYear()} Name of Company</div>
+            <Link to="/agent"><div className="parent3">Agent</div></Link>
             {/* <div className="parent3">Company Registration Informations</div> */}
         </div>
     );

@@ -19,7 +19,8 @@ const GetCustomerData = () => {
   return (
     <div className="">
       <Nav />
-      <h3>Customer Data</h3>
+      <h3 className="agent-header">Customer Data</h3>
+      <div className="table-content">
       <table className="table table-triped mt-3">
           <thead>
               <tr>
@@ -43,15 +44,16 @@ const GetCustomerData = () => {
                             {customer.email}
                         </td>
                         <td>
-                            <Link style={{color: "black"}} to={`/agent/read/${customer._id}`}>More </Link>
-                            <Link style={{color: "black"}} to={`/agent/update/${customer._id}`}>Edit </Link>
-                            <Link style={{color: "black"}} to={`/agent/delete/${customer._id}`}>Delete</Link>
+                            <Link className="getlinks" to={`/agent/read/${customer._id}`}>More </Link>
+                            <Link className="getlinks" to={`/agent/update/${customer._id}`}>Edit </Link>
+                            <Link className="getlinks" to={`/agent/delete/${customer._id}`}>Delete</Link>
                         </td>
                       </tr>
                   ))
               }
           </tbody>
       </table>
+      </div>
     </div>
   );
 }

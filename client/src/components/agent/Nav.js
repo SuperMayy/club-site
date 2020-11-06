@@ -27,6 +27,11 @@ function Nav() {
             Stripe Account
           </li>
           </a>
+          <Link className="nav-link" to="/"> 
+          <li className="nav-item">
+            Main Site
+          </li>
+          </Link>
         </ul>
        </div>
       </nav>
