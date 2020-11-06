@@ -1,9 +1,10 @@
 const express = require('express');
+const keys = require('./config/keys');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const path = require('path');
-const stripe = require('stripe')('sk_test_51HNmqhBRlnUVKZqLSsRkEsUxGrvTZLYaBo7UlCXXesqFzvmDhXFtNp3zo0tN9e1O6pJSaJzfhZgRPOslhNOAre5K00mRvuOwx0');
+const stripe = require('stripe')(keys.stripeSecretKey);
 
 
 const app = express();
@@ -34,5 +35,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(morgan('tiny'));
 //Configuring Routes
 app.use('/api', routes);
+
+//Put React CLient into server when running on heroku
+
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('client/build'));
+}
 
 app.listen(PORT, console.log(`Server is running on ${PORT}`));

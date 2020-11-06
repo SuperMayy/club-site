@@ -1,16 +1,14 @@
 const express = require("express");
-
+const keys = require('../config/keys');
 const  router = express.Router();
-
 const bodyParser = require('body-parser');
-
 const CustomerDetail = require('../models/customerDetail');
-
+require('dotenv').config();
 const nodemailer = require('nodemailer');
 
 // Set your secret key. Remember to switch to your live secret key in production!
 // See your keys here: https://dashboard.stripe.com/account/apikeys
-const stripe = require('stripe')('sk_test_51HNmqhBRlnUVKZqLSsRkEsUxGrvTZLYaBo7UlCXXesqFzvmDhXFtNp3zo0tN9e1O6pJSaJzfhZgRPOslhNOAre5K00mRvuOwx0');
+const stripe = require('stripe')(keys.stripeSecretKey);
 
 
 //Creat POST Request
@@ -113,8 +111,8 @@ router.post('/sent', (req, res) => {
     port: 587,
     secureConnection: false, // TLS requires secureConnection to be false
     auth: {
-        user: 'testerformreciver9920@outlook.com', // like : abc@gmail.com
-        pass: 'Thisisapassword9920'           // like : pass@123
+        user: process.env.EMAIL, // like : abc@gmail.com
+        pass: process.env.PASSWORD           // like : pass@123
     },
     tls: {
       ciphers:'SSLv3'
