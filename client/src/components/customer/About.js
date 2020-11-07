@@ -27,7 +27,7 @@ const About = () => {
             </div>
             </div>
             </div>
-            <div className="container-fluid" style={{background: "#888888", paddingBottom: "80px", paddingTop: "60px"}}>
+            <div className="container-fluid" style={{background: "#3f51b5", color: "white", paddingBottom: "80px", paddingTop: "60px"}}>
             <div className="row">
             <div className="col-sm-4">
               <img src="https://images.pexels.com/photos/3184163/pexels-photo-3184163.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
