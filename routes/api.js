@@ -9,7 +9,7 @@ const nodemailer = require('nodemailer');
 
 // Set your secret key. Remember to switch to your live secret key in production!
 // See your keys here: https://dashboard.stripe.com/account/apikeys
-const stripe = require('stripe')(`${keys.stripeSecretKey}`);
+const stripe = require('stripe')(keys.stripeSecretKey);
 
 
 //Creat POST Request

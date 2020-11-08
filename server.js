@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const path = require('path');
-const stripe = require('stripe')(`${keys.stripeSecretKey}`);
+const stripe = require('stripe')(keys.stripeSecretKey);
 
 
 const app = express();
