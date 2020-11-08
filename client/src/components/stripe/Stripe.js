@@ -14,10 +14,6 @@ import './index.css';
 const stripePromise = loadStripe(`${keys.stripePublishableKey}`);
 
 const Stripe = () => {
-    useEffect(() => {
-        console.log("Stripe", `${keys.stripePublishableKey}`)
-        console.log(typeof keys.stripePublishableKey)
-    })
 
     return(
         <div>
