@@ -108,11 +108,9 @@ video {
 
 @media only screen and (max-width: 910px) {
   table {
-    /* display: block;
-    align-items: center;
-	height: 100%;
-	overflow-x: scroll;
-    width: 80%; */
+    font-size: 1rem;
+  }
+  .child1{
     font-size: 1rem;
   }
   .child2 {
@@ -125,12 +123,7 @@ font-size: 0.8rem
     font-size: 0.8rem;
     width: 100%;
 }
-/* .clickable-card{
-	margin-right: 14px;
-	margin-top: 14px;
-	width: 35px;
-	flex: 1 1 125px;
-} */
+
 }
 
 
