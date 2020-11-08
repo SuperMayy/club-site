@@ -15,16 +15,33 @@ const Home = () => {
               </video>
             </div>
             <div className="header-region">
-                <h3 className="subheader">A quote to convince</h3>
-                <p style={{textAlign: "center"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h3 className="subheader">Everything in one.</h3>
+                <p style={{textAlign: "center"}}>Our platform is designed to have everything you will 
+                need in one place. No matter what type of classes you run.
+                With have everything in one place, it makes your life easier.</p>
             </div>
             <hr />
             {/* Card Info Region */}
             <div className="column">
             <div className="row">
-                <Card />
-                <Card />
-                <Card />
+                <Card 
+                title="Bookings/payments?"
+                text1="Ad-hoc classes (where parents can book single day or every Wednesday for 3/5 weeks ect)"
+                text2="Block bookings"
+                text3="Monthly subscriptions" 
+                />
+                <Card 
+                title="Easy"
+                text1="Easy to understand"
+                text2="Easy to edit"
+                text3="Easy to change"
+                />
+                <Card 
+                title="Why us?" 
+                text1="No hidden costs (there’s a name for this when a company takes a percentage)"
+                text2="Built in video call feature (am I allowed to call it zoom)"
+                text3="Link it to your very own app"
+                />
                 </div>
             </div>
             <br/>

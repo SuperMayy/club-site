@@ -13,6 +13,7 @@ import CustomerSetUp from './components/customer/CustomerSetUp';
 import About from './components/customer/About';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import PaymentSection from './components/stripe/PaymentSection';
+import CaseStudy from './components/customer/CaseStudy';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/payment" component={PaymentSection}/>
         <Route path="/about" component={About}/>
         <Route path="/setup" exact component={CustomerSetUp}/>
+        <Route path="/casestudy" exact component={CaseStudy}/>
       </Switch> 
     </div>
     </Router>

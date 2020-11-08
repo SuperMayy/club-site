@@ -8,17 +8,17 @@ const About = () => {
         <div>
             <Header />
             <div className="jumbotron text-center" style={{background: "#3f51b5", color: "white", borderRadius: "0px"}}>
-              <h1>Company</h1>
-              <p>We specialize in blablabla</p>
+              <h1>My Club Platform</h1>
+              <p>We specialise in: Sports clubs – before & after school clubs – Doggy day care– toddler groups</p>
             </div>
             <div className="container-fluid" style={{paddingBottom: "60px"}}>
             <div className="row">
             <div className="col-sm-8">
-            <h2>About Company</h2>
-              <h4>Lorem ipsum..</h4>
-              <p>Lorem ipsum..</p>
-              {/* <a href="/#contact"><button className="btn btn-default btn-lg" 
-              style={{background: "black", color: "white"}}>Get in Touch</button></a> */}
+            <h2>About Us</h2>
+              <p>We at my club platform wanted to make things easier as a manager of clubs. 
+                We were just like you, paying out for so many different platforms because there wasn’t 
+                one that did everything. So with over 15 years in the industry we have put together in 
+                one easy platform everything you would need to run your business stress free.</p>
             </div>
             <div className="col-sm-4">
               <img src="https://images.pexels.com/photos/3184163/pexels-photo-3184163.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
@@ -36,8 +36,9 @@ const About = () => {
             </div>
             <div className="col-sm-8">
               <h2>Our Values</h2>
-              <h4><strong>MISSION:</strong> Our mission lorem ipsum..</h4>
-              <p><strong>VISION:</strong> Our vision Lorem ipsum..</p>
+              <p>We treat all our customers as individuals, we are here to help whenever you need help. 
+                Let us know if you have any ideas and we will do our best to add in the feature for you. 
+                Together we can have it all</p>
             </div>
             </div>
             </div>

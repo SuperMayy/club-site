@@ -6,7 +6,7 @@ const MoreDetail = ({ match }) => {
     const [customer, setCustomer] = useState({});
     useEffect(() =>{
         fetchCustomer();
-    },[])
+    })
     
     const fetchCustomer = async () => {
         const fetchCustomer = await fetch(`/api/${match.params.id}`)

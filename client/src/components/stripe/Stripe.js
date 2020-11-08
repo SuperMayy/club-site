@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import keys from '../../config/keys';
 // Components
 import HomePage from './HomePage';
@@ -14,7 +14,9 @@ import './index.css';
 const stripePromise = loadStripe(`${keys.stripePublishableKey}`);
 
 const Stripe = () => {
-    
+    useEffect(() => {
+        console.log("Stripe", stripePromise)
+    })
 
     return(
         <div>
