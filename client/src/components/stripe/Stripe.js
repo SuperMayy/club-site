@@ -15,7 +15,8 @@ const stripePromise = loadStripe(keys.stripePublishableKey);
 
 const Stripe = () => {
     useEffect(() => {
-        console.log("Stripe", stripePromise)
+        console.log("Stripe", keys.stripePublishableKey)
+        console.log(typeof keys.stripePublishableKey)
     })
 
     return(

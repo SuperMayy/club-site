@@ -95,7 +95,7 @@ function HomePage() {
     if (result.error) {
       console.log(result.error.message);
     } else {
-      const res = await axios.post('/api/sub', {'payment_method': result.paymentMethod.id, 'email': email});
+      const res = await axios.post('/api/sub', {'payment_method': result.paymentMethod.id, 'email': email}); //added card part here
       // eslint-disable-next-line camelcase
       const {client_secret, status} = res.data;
 
