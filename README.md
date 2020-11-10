@@ -10,6 +10,7 @@ They should also be able to sign up, which will make a POST request to the datab
 I am still deciding on which technology to use. The agent will be able to use CRUD operation, whith the customers data.
 
 ## To do
+Alert asking if agent is sure that they want to delet the ausomers details.
 Authentication
 Automatic Email when user has signed up, which stated that the agent will get in touch with them
 Functionality that allows agents to send an email template automatically
