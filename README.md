@@ -1,4 +1,5 @@
 # club-site
+https://club-site-main.herokuapp.com/
 
 This site uses React, Nodejs, MondoDB and Express. It also uses the stripe API, nodemailer, authentication (Auth0, JWt or Passport) and for now some bootstrap. 
 Intead to use GSAP in the future to take the design to the next level.
